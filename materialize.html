@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Freddy's Pizzeria - Materialized</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="header-bg">
+       <div class="nav-wrapper container">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="aboutOwner.html">About the Owners</a></li>
+               <li><a href="menu.html">View Menu</a></li>
+               <li><a href="materialize.html">Materialized</a></li>
+           </ul>
+       </div>
+   </nav>
+
+   <!-- Header Section -->
+   <div class="section header-bg center-align">
+       <h1 class="white-text">Welcome to Freddy's Pizzeria</h1>
+       <p class="white-text">Experience the best animatronic entertainment with delicious food!</p>
+   </div>
+
+   <!-- About Section -->
+   <div class="container section section-bg">
+       <div class="row">
+           <div class="col s12 m6">
+               <h2>About Us</h2>
+               <p>Freddy's Pizzeria was founded in 1987 by William B. Afton. Our first location opened in Hurricane, Utah, and has since expanded across the state, bringing fun animatronics and great food to families everywhere.</p>
+           </div>
+           <div class="col s12 m6">
+               <img src="images/Pizzzera.jpg" alt="Freddy's Pizzeria" class="responsive-img">
+           </div>
+       </div>
+   </div>
+
+   <!-- Locations Table -->
+   <div class="container section">
+       <h2>Our Locations Overview</h2>
+       <table class="highlight centered">
+           <thead>
+               <tr class="table-header">
+                   <th>City</th>
+                   <th>Opening Year</th>
+                   <th>Special Feature</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>Hurricane</td>
+                   <td>1987</td>
+                   <td>Original Location</td>
+               </tr>
+               <tr>
+                   <td>Salt Lake City</td>
+                   <td>1995</td>
+                   <td>Largest Restaurant</td>
+               </tr>
+           </tbody>
+       </table>
+   </div>
+
+   <!-- Contact Section -->
+   <div id="contact" class="section section-bg">
+       <div class="container">
+           <h2>Contact Us</h2>
+           <div class="row">
+               <div class="col s12 m6">
+                   <form>
+                       <div class="input-field">
+                           <input id="name" type="text" class="validate">
+                           <label for="name">Name</label>
+                       </div>
+                       <div class="input-field">
+                           <input id="email" type="email" class="validate">
+                           <label for="email">Email</label>
+                       </div>
+                       <div class="input-field">
+                           <textarea id="message" class="materialize-textarea"></textarea>
+                           <label for="message">Message</label>
+                       </div>
+                       <button type="submit" class="btn waves-effect waves-light">Send</button>
+                   </form>
+               </div>
+               <div class="col s12 m6">
+                   <h5>Visit Us</h5>
+                   <p>123 Pizzeria St, Hurricane, UT</p>
+                   <p><i class="material-icons">phone</i> (123) 456-7890</p>
+                   <p><i class="material-icons">email</i> contact@freddyspizzeria.com</p>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="page-footer header-bg">
+       <div class="container center-align">
+           <p class="white-text">&copy; 2025 Freddy's Pizzeria. All rights reserved.</p>
+       </div>
+   </footer>
+</body>
+</html>
