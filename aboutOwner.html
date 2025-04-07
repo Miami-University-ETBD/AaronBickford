@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <title> 
         About the Owners
     </title>
@@ -38,6 +39,25 @@
       </p>
       <img src="images/edwin.png" alt="Edwin Martinelli Portrait" class="circle responsive-img" width="200" height="200">
     </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {
+          // optional settings
+          fullWidth: true,
+          indicators: true
+        });
+      });
+    </script>
+
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"><img src="images\Pizzzera.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="images\freddy.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="images\foxy.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="images\chica.jpg"></a>
+      <a class="carousel-item" href="#five!"><img src="images\bonnie.jpg"></a>
+      </div>
 
     <section>
       <h2><span style="text-decoration: underline;">Animatronic Mascots</span></h2>
@@ -83,6 +103,10 @@
       <p>Phone: (123) 456-7890</p>
       <p>Email: contact@freddyspizzeria.com</p>
   </footer>
+  <!-- jQuery (required by Materialize) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
 

@@ -4,7 +4,6 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Freddy's Pizzeria - Materialized</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
    <link rel="stylesheet" href="style.css">
 
 </head>
@@ -20,6 +19,8 @@
            </ul>
        </div>
    </nav>
+
+      
 
    <!-- Header Section -->
    <div class="section header-bg center-align">
@@ -106,11 +107,93 @@
        </div>
    </div>
 
+   <div id="radio-section" class="section container">
+    <h2>Select Your Favorite animatronic</h2>
+    <form>
+        <p>
+            <label>
+                <input name="Freddy" type="radio" value="Freddy" onclick="displayPastry()"/>
+                <span>Freddy</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="Chica" type="radio" value="Chica" onclick="displayPastry()"/>
+                <span>Chica</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="Foxy" type="radio" value="Foxy" onclick="displayPastry()"/>
+                <span>Foxy</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input name="Bonnie" type="radio" value="Bonnie" onclick="displayPastry()"/>
+                <span>Bonnie</span>
+            </label>
+        </p>
+    </form>
+    <div id="animatronic-responce"></div>
+</div>
+
+<!-- Email Feedback Section -->
+<div id="feedback-section" class="section container">
+    <h2>Subscribe for Coupons and Deals!</h2>
+    <form onsubmit="submitEmail(event)">
+        <div class="input-field">
+            <input id="email" type="email" required>
+            <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn">Subscribe</button>
+    </form>
+    <div id="email-response"></div>
+</div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Check Your email-response</h4>
+    <p id="modal-content-text"></p>
+  </div>
+</div>
+
+
+
+
    <!-- Footer -->
    <footer class="page-footer header-bg">
        <div class="container center-align">
            <p class="white-text">&copy; 2025 Freddy's Pizzeria. All rights reserved.</p>
        </div>
    </footer>
+   <script>
+    // Initialize modal
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+
+
+    // Function to display selected pastry
+    function displayPastry() {
+        const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
+        document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
+    }
+    // Function to handle email subscription form submission
+    function submitEmail(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        document.getElementById('email').value = ''; // Clear the input
+
+
+        // Display modal
+        const modalText = document.getElementById('modal-content-text');
+        modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        const modal = M.Modal.getInstance(document.getElementById('modal1'));
+        modal.open();
+    }
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </body>
 </html>

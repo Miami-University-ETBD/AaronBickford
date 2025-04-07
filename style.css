@@ -168,3 +168,29 @@ html {
     height: 200px;
     object-fit: cover; /* Ensures the image fills the circular area */
 }
+/* Improve header visibility */
+.collapsible-header {
+    color: #212121;
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+  
+  /* Style the collapsible content */
+  .collapsible-body {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* Make icons visible */
+  .material-icons {
+    color: #212121;
+  }
+  
+  /* Remove weird borders and add clean shadows */
+  .collapsible li {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
