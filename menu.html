@@ -6,7 +6,19 @@
     </title>
     <link rel="stylesheet" href="style.css">
   </head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
   <body>
+    <nav class="header-bg">
+      <div class="nav-wrapper container">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutOwner.html">About the Owners</a></li>
+              <li><a href="menu.html">View Menu</a></li>
+              <li><a href="materialize.html">Materialized</a></li>
+              <li><a href="bootstrap.html">Bootstrap</a></li>
+          </ul>
+      </div>
+  </nav>
     <header>
       <h1>
         Welcome to <span style="text-decoration: underline;">Freddy's Pizzeria!</span>
@@ -91,6 +103,30 @@
       </ul>
     </section>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+</script>
+  
+
+<ul class="collapsible">
+  <li>
+    <div class="collapsible-header">🍕 Cheese Pizza</div>
+    <div class="collapsible-body"><span>Cheese pizza is a classic favorite, loved for its delicious flavor. The combination of cheese and our dough makes it a comforting meal. You can enjoy it with your favorite toppings or just plain cheese for the ultimate food experience.</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">🥤 Soda</div>
+    <div class="collapsible-body"><span>A soda can be the perfect complement to any meal, especially pizza! With a variety of flavors available, from cola to fruit soda, there’s a choice for everyone. Whether served ice-cold or with a splash of lime, it’s a sweet way to quench your thirst.</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header">🍪 Chocolate Chip Cookie</div>
+    <div class="collapsible-body"><span>The chocolate chip cookie is a great dessert, known for its gooey interior and crispy edges. Fresh out of the oven, it’s the perfect snack to enjoy with a glass of milk or just on its own. Every bite offers the delightful crunch of chocolate chunks and the sweetness of dough.</span></div>
+  </li>
+</ul>
+
+
     <aside>
       <h3>Did You Know?</h3>
       <p>
@@ -100,6 +136,15 @@
 
     <footer>
       <p>&copy; 2025 Freddy's Pizzeria. All rights reserved.</p>
-    </footer>
+      <p>Location: Hurricane, Utah</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: contact@freddyspizzeria.com</p>
+  </footer>
+
+<!-- jQuery (required by Materialize) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   </body>
 </html>

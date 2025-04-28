@@ -6,6 +6,18 @@
     </title>
     <link rel="stylesheet" href="style.css">
   </head>
+  <nav class="header-bg">
+    <div class="nav-wrapper container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutOwner.html">About the Owners</a></li>
+            <li><a href="menu.html">View Menu</a></li>
+            <li><a href="materialize.html">Materialized</a></li>
+            <li><a href="bootstrap.html">Bootstrap</a></li>
+        </ul>
+    </div>
+</nav>
+
   <body>
     <header>
       <h1> 
@@ -16,10 +28,25 @@
       </h2>
     </header>
 
+    <h2 id="welcomeMessage">Welcome to Freddy's Pizzeria!</h2>
+    <button onclick="changeText()">Change Welcome Message</button>
+
+    <button onclick="showAlert()">Click Me</button>
+
+    <script>
+        function showAlert() {
+            alert("Welcome to Freddy's Pizzeria!");
+        }
+
+        function changeText() {
+            document.getElementById("welcomeMessage").innerText = "Enjoy our World-Class Animatronics!";
+        }
+    </script>
+    
     <p> 
-      Freddy's was founded in 1987 by <b> William B. Afton. </b> First Location was created in 
+      Freddy's was founded in 1987 by <b> William B. Afton. </b> The first location was created in 
       <i> Hurricane, Utah. </i> The small family restaurant slowly grew in popularity because of the new mascot 
-      <u> Freddy Fazbear. </u> The mascot was made into an animatronic for the restaurants by <b> Edwin Martinelli.</b> 
+      <u> Freddy Fazbear. </u> The mascot was made into an animatronic for the restaurant by <b> Edwin Martinelli.</b> 
       The restaurant has slowly grown all around Utah, and the animatronics have been mimicked for all the restaurants. 
     </p> 
 
@@ -57,19 +84,15 @@
         <td>Largest Restaurant</td>
       </tr>
     </table>
-
-    <div class="button-container">
-      <a href="aboutOwner.html">
-        <button class="btn">About the Owners</button>
-      </a>
-      <a href="menu.html">
-        <button class="btn">View Menu</button>
-      </a>
-    </div>
-
+    
     <footer>
       <p>&copy; 2025 Freddy's Pizzeria. All rights reserved.</p>
+      <p>Location: Hurricane, Utah</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: contact@freddyspizzeria.com</p>
     </footer>
   </body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </html>
+
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delicious Bakery</title>
+</head>
+<!-- Header of the website -->
+<header>
+   <h1>Welcome to Freddy's Pizzeria</h1>
+  
+   <nav class="header-bg">
+    <div class="nav-wrapper container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutOwner.html">About the Owners</a></li>
+            <li><a href="menu.html">View Menu</a></li>
+            <li><a href="materialize.html">Materialized</a></li>
+            <li><a href="bootstrap.html">Bootstrap</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+</header>
+<script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideUp("slow");
+      });
+    });
+    </script>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#div1").fadeOut();
+            $("#div2").fadeOut("slow");
+            $("#div3").fadeOut(3000);
+          });
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+              $("#hide").click(function(){
+                $("p").hide();
+              });
+              $("#show").click(function(){
+                $("p").show();
+              });
+            });
+            </script>
+
+<body>
+    <div id="flip">Click to hide the evil message!</div>
+    <div id="panel">Edwin Martinelli is a stinky man!</div>
+
+
+<button>Click to fade out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+    
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+

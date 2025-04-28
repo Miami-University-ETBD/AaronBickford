@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <title> 
         About the Owners
     </title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body> 
+    
+    <nav class="header-bg">
+      <div class="nav-wrapper container">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutOwner.html">About the Owners</a></li>
+              <li><a href="menu.html">View Menu</a></li>
+              <li><a href="materialize.html">Materialized</a></li>
+              <li><a href="bootstrap.html">Bootstrap</a></li>
+          </ul>
+      </div>
+  </nav>
+
     <header>
       <h1>About the Owners</h1>
     </header>
@@ -22,8 +36,11 @@
       <p>
         With a strong entrepreneurial spirit, William co-founded a successful restaurant chain that combined delicious dining experiences with cutting-edge animatronic performances. His vision was to create a place where families could gather, celebrate, and enjoy immersive storytelling through advanced robotics.
       </p>
-      <img src="afton.jpg" alt="William Afton Portrait" width="300" height="200">
+      <img src="images/afton.jpg" alt="William Afton Portrait" class="circle responsive-img" width="200" height="200">
     </section>
+    <div class="video-container">
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/VyINTjRVIGc" frameborder="0" allowfullscreen></iframe>
+    </div>
 
     <section>
       <h2><span style="text-decoration: underline;">Edwin Martinelli</span></h2>
@@ -33,8 +50,27 @@
       <p>
         In the late 1970s, Edwin partnered with William Afton to co-found an entertainment company that brought animatronic and family fun together. They introduced a new generation of mascots that combined advanced AI with captivating performances. Their creations became the foundation of a family-friendly restaurant experience that entertained visitors and led to the company’s success.
       </p>
-      <img src="edwin.jpg" alt="Edwin Martinelli Portrait" width="300" height="200">
+      <img src="images/edwin.png" alt="Edwin Martinelli Portrait" class="circle responsive-img" width="200" height="200">
     </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {
+          // optional settings
+          fullWidth: true,
+          indicators: true
+        });
+      });
+    </script>
+
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"><img src="images\Pizzzera.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="images\freddy.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="images\foxy.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="images\chica.jpg"></a>
+      <a class="carousel-item" href="#five!"><img src="images\bonnie.jpg"></a>
+      </div>
 
     <section>
       <h2><span style="text-decoration: underline;">Animatronic Mascots</span></h2>
@@ -47,22 +83,22 @@
         <tr>
           <td><strong>Freddy Fivebear</strong></td>
           <td>The charismatic leader, known for his cheerful performances and friendly demeanor.</td>
-          <td><img src="freddy.jpg" alt="Freddy Fivebear" width="100"></td>
+          <td><img src="images/freddy.jpg" alt="Freddy Fivebear" width="100"></td>
         </tr>
         <tr>
           <td><strong>Bonnie LeBonbon</strong></td>
           <td>A skilled guitarist with a love for music and a playful attitude.</td>
-          <td><img src="bonnie.jpg" alt="Bonnie LeBonbon" width="100"></td>
+          <td><img src="images/bonnie.jpg" alt="Bonnie LeBonbon" width="100"></td>
         </tr>
         <tr>
           <td><strong>Foxy Freaker</strong></td>
           <td>A pirate-themed fox that loves adventurous tales and high-energy performances.</td>
-          <td><img src="foxy.jpg" alt="Foxy Freaker" width="100"></td>
+          <td><img src="images/foxy.jpg" alt="Foxy Freaker" width="100"></td>
         </tr>
         <tr>
           <td><strong>Cheeky Chica</strong></td>
           <td>A cheerful and energetic character, known for her love of food and cooking-themed songs.</td>
-          <td><img src="chica.jpg" alt="Chica the Chicken" width="100"></td>
+          <td><img src="images/chica.jpg" alt="Chica the Chicken" width="100"></td>
         </tr>
       </table>
     </section>
@@ -76,7 +112,14 @@
 
     <footer>
       <p>&copy; 2025 Freddy's Pizzeria. All rights reserved.</p>
-    </footer>
+      <p>Location: Hurricane, Utah</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: contact@freddyspizzeria.com</p>
+  </footer>
+  <!-- jQuery (required by Materialize) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
 
